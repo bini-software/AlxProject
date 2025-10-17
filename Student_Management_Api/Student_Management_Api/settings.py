@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'student',
     'course',
     'enrollment',
-    'api',
     'rest_framework',
+    'api',
    
  
  

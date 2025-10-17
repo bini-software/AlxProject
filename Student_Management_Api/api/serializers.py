@@ -3,8 +3,12 @@ from student.models import Student
 from course.models import Course
 from enrollment.models import Enrollment
 
+<<<<<<< HEAD
 
 class  StudentSerializer(serializers.ModelSerializer):
+=======
+class StudentSerializer(serializers.ModelSerializer):
+>>>>>>> main
     class Meta:
         model = Student
         fields = '__all__'
@@ -15,11 +19,14 @@ class CourseSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class EnrollmentSerializer(serializers.ModelSerializer):
+<<<<<<< HEAD
     student = StudentSerializer(read_only=True)
     course = CourseSerializer(read_only=True)
     student_id = serializers.PrimaryKeyRelatedField(queryset=Student.objects.all(), write_only=True, source='student')
     course_id = serializers.PrimaryKeyRelatedField(queryset=Course.objects.all(), write_only=True, source='course')
     
+=======
+>>>>>>> main
     class Meta:
         model = Enrollment
         fields = '__all__'
