@@ -14,4 +14,7 @@ urlpatterns = [
     path('enrollments/', views.EnrollmentListView.as_view(), name='enrollment-list'),
     path('enrollments/create/', views.EnrollmentCreateView.as_view(), name='enrollment-create'),
     path('enrollments/<int:pk>/', views.EnrollmentDetailView.as_view(), name='enrollment-detail'),
+
+    path('signup/', views.UserCreateView.as_view(), name='signup'),
+    path('login/', views.LoginView.as_view(), name='login')
 ]
