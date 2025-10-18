@@ -1,7 +1,7 @@
 # AlxProject
 # Student Management API
 
-This project is a simple API for managing **students, courses, and enrollments**. It is built with **Django** and **Django REST Framework (DRF)**. The API includes **authentication, role-based access control, filtering, ordering, and pagination**, so users can only access what they are allowed to.
+This project is a simple API for managing **students, courses, and enrollments**. It is built with **Django** and **Django REST Framework (DRF)**. The API includes **authentication, role-based access control, filtering, and ordering, so users can only access what they are allowed to.
 
 ---
 
@@ -17,7 +17,7 @@ The project structure is designed for clarity and separation of concerns:
 ### Students
 - Admin can **create, list, update, and delete** students.
 - Students can **view only their own information**.
-- Supports **searching** (`?search=`), **ordering** (`?ordering=`), and **pagination** (`?page=`).
+- Supports **searching** (`?search=`), and **ordering** (`?ordering=`).
 
 ### Courses
 - Admin can **create and manage courses**.
